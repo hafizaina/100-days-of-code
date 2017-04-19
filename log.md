@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 1: April 18, 2017
+### Day 0: April 18, 2017
 
 **Today's Progress**: I worked on iOS development and added an image viewer to the app.
 
