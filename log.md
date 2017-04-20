@@ -17,7 +17,7 @@
 
 **Today's Progress**: Worked on functionality to implement image picker for meal entry in the app.
 
-**Thoughts**: I learned that in iOs there is a difference between views and controls. Views are simply dispayed items such as text and images. Controls, while being a subclass of view, are interactive entities within a content view. While implementing an image picker, I had a default image that the user has to tap in order to enable the image picker. However, an image is simply a view and not a control. With the use of a GestureRecognizer object, I was able to decorate the view object (UIImageView) with a gesture recognizer which recognizes a tap gesure, and there, I was able to transform the UIImageView view object into a control object.
+**Thoughts**: I learned that in iOs there is a difference between views (of type UIView) and controls (of type UIControl which subclasses UIView). Views are simply dispayed items such as text and images. Controls, while being a subclass of view, are interactive entities within a content view. While implementing an image picker, I had a default image that the user has to tap in order to enable the image picker. However, an image is simply a view and not a control. With the use of a GestureRecognizer object, I was able to decorate the view object (UIImageView) with a gesture recognizer which recognizes a tap gesure, and there, I was able to transform the UIImageView view object into a control object.
 
 **Link(s) to work**: [Calculator App](http://www.example.com)
 
