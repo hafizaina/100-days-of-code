@@ -19,14 +19,13 @@
 
 **Thoughts**: I learned that in iOs there is a difference between views (of type UIView) and controls (of type UIControl which subclasses UIView). Views are simply dispayed items such as text and images. Controls, while being a subclass of view, are interactive entities within a content view. While implementing an image picker, I had a default image that the user has to tap in order to enable the image picker. However, an image is simply a view and not a control. With the use of a GestureRecognizer object, I was able to decorate the view object (UIImageView) with a gesture recognizer which recognizes a tap gesure, and therefore, I was able to transform the UIImageView view object into a control object.
 
-**Link(s) to work**: [Calculator App](http://www.example.com)
+### Day 3: April 20, 2017
 
+**Today's Progress**: I've got the image picker working for the app.
 
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
+**Thoughts** Short day. Started coding late. I implemented the 
+imagePickerControllerDidCancel(_ picker: UIImagePickerController) & 
+imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) function within the view controller that handles meal item creation. These methods are part of the UIImagePickerControllerDelegate class that were overridden by my view controller since it serves as a delegate to the image controller and thus extends that class. The first method deals with the scenario where a user cancels out of the image picker, and the second method deals with the scenario when a user picks an image via the image picker. I also learned about info.plist, which is a key-value property list where essential configuration information about the app is stored. I learned that starting with iOS 10+, the system must ask the user before accessing thier photo library. Therefore, you must provide a photo library usage description (by adding a new item line within the info.plist file). The description should explain why your app wants to access the photo library.
 
 **Link(s) to work**
 1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
