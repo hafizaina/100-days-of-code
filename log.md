@@ -27,6 +27,13 @@
 imagePickerControllerDidCancel(_ picker: UIImagePickerController) & 
 imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) function within the view controller that handles meal item creation. These methods are part of the UIImagePickerControllerDelegate class that were overridden by my view controller since it serves as a delegate to the image controller and thus extends that class. The first method deals with the scenario where a user cancels out of the image picker, and the second method deals with the scenario when a user picks an image via the image picker. I also learned about info.plist, which is a key-value property list where essential configuration information about the app is stored. I learned that starting with iOS 10+, the system must ask the user before accessing thier photo library. Therefore, you must provide a photo library usage description (by adding a new item line within the info.plist file). The description should explain why your app wants to access the photo library.
 
+### Day 4: April 21, 2017
+
+**Today's Progress**: Started implementation of a custom control.
+
+**Thoughts** Despite having the time, my motivation was a bit lacking today. It likely has to do with the fact that it was a Friday evening, and those tend to be my least productive time of the week. Today I learned about custom controls in iOS. A custom control is a specialized type of view (specifically, an instance of the UIControl class or one of its subclasses) that responds to user input. In the process of creating this custom control, I'm also learning how to generate view elements programatically in addition to doing it from the storyboard. I look forward to continuing on this progress tomorrow.
+
+
 **Link(s) to work**
 1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
 2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
