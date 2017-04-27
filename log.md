@@ -39,6 +39,10 @@ imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWi
 
 **Thoughts** Unfortunately, it was another sluggish day. Still getting myself mentally trained to do work on weekends. Today I continued implementing the custom control for the star ratings. I learned how to connect the custom control properties from code to the Interface Builder via adding the @IBInspectable attribute to the properties. You have to also implement the didset() method on those properties to enable an update when someone changes their values in the Interface Builder. I also learned how to initialize an array in swift ( ... = [ArrayType]() ). Lastly, I learned how to enable the custom control to be displayed within the Interface Builder by adding the @IBDesignable attribute to the custom control class declaration.
 
+### Day 6: April 23, 2017
+
+**Today's Progress**: Finished the custom control to implement the star rating.
+
+**Thoughts** The custom control portion of the Swift ios tutorial took a while, but I learned a lot of useful concepts. This is probably code I will need to come back and review on in the future. However, I did enjoy it and I think learning to make your own ios custom control is a very useful tool to have in your toolbox.
+
 **Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
