@@ -45,4 +45,12 @@ imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWi
 
 **Thoughts** The custom control portion of the Swift ios tutorial took a while, but I learned a lot of useful concepts. This is probably code I will need to come back and review on in the future. However, I did enjoy it and I think learning to make your own ios custom control is a very useful tool to have in your toolbox.
 
+### Day 7: April 26, 2017
+
+**Today's Progress**: After a 2 day hiatus (thankfully it wasn't longer), I have resumed the challenge.! Today, I didn't write any code at all. However, I did spend time analyzing the code that I wrote while following the tutorial to implement the custom control rating buttons since there were a lot of Swift concepts that I did not quite understand. Thus, I spend my time today reading up on the Swift language. Here's what I learned. The "?" after a variable type declaration denotes a variable of the specified type that can have an optional value. This mean that at any given point during the execution of the program, the variable can be valueless (or nil). You can access the underlying value of an optional variable using the '!' operator at the end of the variable name. This is called "forced unwrapping." The exclamation mark effectively says, "I know that this optional definitely has a value; please use it." If you define an optional variable without providing a default value, the variable is automatically set to nil for you.
+
+*Talk about if statements and forced unwrapping, optional binding, and implicitly unwrapped optionals (read the tab you have opened about "whats the point of implicitly unwrapped optionals??")*
+
+**Thoughts**
+
 **Link(s) to work**
