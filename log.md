@@ -51,6 +51,6 @@ imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWi
 
 *Talk about if statements and forced unwrapping, optional binding, and implicitly unwrapped optionals (read the tab you have opened about "whats the point of implicitly unwrapped optionals??")*
 
-**Thoughts**
+**Thoughts** Swift is very cool, and I am excited to learn more about this programming language.!
 
 **Link(s) to work**
