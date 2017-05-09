@@ -65,7 +65,7 @@ Knowing this, it appears that memory leaks occur when references to objects are 
 
 A weak reference is a reference that does not keep a strong hold on the instance it refers to, and so does not stop ARC from disposing of the referenced instance. This behavior prevents the reference from becoming part of a strong reference cycle. ARC automatically sets a weak reference to nil when the instance that it refers to is deallocated.  Because weak references need to allow their value to be changed to nil at runtime, they are always declared as variables, rather than constants, of an optional type. You can check for the existence of a value in the weak reference, just like any other optional value, and you will never end up with a reference to an invalid instance that no longer exits.
 
-Use a weak reference when the other instance has a shorter lifetime - that is, when the other instance can be deallocated first. For example, it is appropriate for an apartment to be able to have no tenant at some point in its lifetime, and so a weak reference to a tenant would be appopriate.
+Use a weak reference when the other instance has a shorter lifetime - that is, when the other instance can be deallocated first. For example, it is appropriate for an apartment to be able to have no tenant at some point in its lifetime, and so a weak reference to a tenant would be appopriate because when you deference the variable containing the strong reference to the tenant, there is only the weak reference remaining (which would be automatically derefereced by the ARC), thereby allowing the object to be deallocated.
 
 
 **Thoughts** Swift is very cool, and I am excited to learn more about this programming language.!
