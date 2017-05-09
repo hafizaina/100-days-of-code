@@ -70,4 +70,4 @@ Use a weak reference when the other instance has a shorter lifetime - that is, w
 
 **Thoughts** Swift is very cool, and I am excited to learn more about this programming language.!
 
-**Link(s) to work**
+**Link(s) to work** https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID55
