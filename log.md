@@ -47,9 +47,26 @@ imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWi
 
 ### Day 7: April 26, 2017
 
-**Today's Progress**: After a 2 day hiatus (thankfully it wasn't longer), I have resumed the challenge.! Today, I didn't write any code at all. However, I did spend time analyzing the code that I wrote while following the tutorial to implement the custom control rating buttons since there were a lot of Swift concepts that I did not quite understand. Thus, I spend my time today reading up on the Swift language. Here's what I learned. The "?" after a variable type declaration denotes a variable of the specified type that can have an optional value. This mean that at any given point during the execution of the program, the variable can be valueless (or nil). You can access the underlying value of an optional variable using the '!' operator at the end of the variable name. This is called "forced unwrapping." The exclamation mark effectively says, "I know that this optional definitely has a value; please use it." If you define an optional variable without providing a default value, the variable is automatically set to nil for you.
+**Today's Progress**: After a 2 day hiatus (thankfully it wasn't longer), I have resumed the challenge.! Today, I didn't write any code at all. However, I did spend time analyzing the code that I wrote while following the tutorial to implement the custom control rating buttons since there were a lot of Swift concepts that I did not quite understand. Thus, I spent my time today reading up on the Swift language. Here's what I learned. The "?" after a variable type declaration denotes a variable of the specified type that can have an optional value. This mean that at any given point during the execution of the program, the variable can be valueless (or nil). You can access the underlying value of an optional variable using the '!' operator at the end of the variable name. This is called "forced unwrapping." The exclamation mark effectively says, "I know that this optional definitely has a value; please use it." If you define an optional variable without providing a default value, the variable is automatically set to nil for you.
 
-*Talk about if statements and forced unwrapping, optional binding, and implicitly unwrapped optionals (read the tab you have opened about "whats the point of implicitly unwrapped optionals??")*
+**Thoughts** Swift is very cool, and I am excited to learn more about this programming language.!
+
+**Link(s) to work**
+
+### Day 8: May 8, 2017
+
+**Today's Progress**: Unfortunately, I took another hiatus, but I am back at it, which is all that matters at this point. After a refresher on optionals, I started off reading about Automatic Reference Counting (ARC). Swift uses ARC to track and manage your app's memory usage. ARC automatically frees up the memory used by class instances when those instances are no longer needed. This basically performs a similar function as the garbage collectors in Java and C#. To make sure instances in use do not disappear (aka are deleted from memory), ARC tracks how many properties, constants, and vairables are currently referring to each class instance. ARC will not deallocate an instance as long as atleast one active reference to that instance still exists.
+
+Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes a strong reference to the instance. Thee reference is called a “strong” reference because it keeps a firm hold on that instance, and does not allow it to be deallocated as long as that strong reference remains.
+
+Knowing this, it appears that memory leaks occur when references to objects are not properly deallocated and objects continue to persist in memory well after they are no longer needed. This causes objects to crowd up the memory and ultimately results in a memory leak.
+
+**Weak References**
+
+A weak reference is a reference that does not keep a strong hold on the instance it refers to, and so does not stop ARC from disposing of the referenced instance. This behavior prevents the reference from becoming part of a strong reference cycle. ARC automatically sets a weak reference to nil when the instance that it refers to is deallocated.  Because weak references need to allow their value to be changed to nil at runtime, they are always declared as variables, rather than constants, of an optional type. You can check for the existence of a value in the weak reference, just like any other optional value, and you will never end up with a reference to an invalid instance that no longer exits.
+
+Use a weak reference when the other instance has a shorter lifetime - that is, when the other instance can be deallocated first. For example, it is appropriate for an apartment to be able to have no tenant at some point in its lifetime, and so a weak reference to a tenant would be appopriate.
+
 
 **Thoughts** Swift is very cool, and I am excited to learn more about this programming language.!
 
