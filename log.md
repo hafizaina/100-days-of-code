@@ -53,7 +53,7 @@ imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWi
 
 **Link(s) to work**
 
-### Day 8: May 8, 2017 - Strong/Weak References and Refernce Cycles
+### Day 8: May 8, 2017 - Strong/Weak References and Reference Cycles
 
 **Today's Progress**: Unfortunately, I took another hiatus, but I am back at it, which is all that matters at this point. After a refresher on optionals, I started off reading about Automatic Reference Counting (ARC). Swift uses ARC to track and manage your app's memory usage. ARC automatically frees up the memory used by class instances when those instances are no longer needed. This basically performs a similar function as the garbage collectors in Java and C#. To make sure instances in use do not disappear (aka are deleted from memory), ARC tracks how many properties, constants, and vairables are currently referring to each class instance. ARC will not deallocate an instance as long as atleast one active strong reference to that instance still exists.
 
