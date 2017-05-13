@@ -71,3 +71,11 @@ Use a weak reference when the other instance has a shorter lifetime - that is, w
 **Thoughts** Swift is very cool, and I am excited to learn more about this programming language.!
 
 **Link(s) to work** https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID55
+
+### Day 9: May 13, 2017 - Models and Unit Testing
+
+**Today's Progress**: I wrapped up code on writing a simple Model class to manage a type of data I will be dealing with in my iOS Protein Tracker app. I learned about regular iniitializers and failable initializers. Initializers are akin to constructors in Java and C#. Failable initializers differ from regular initializers in that they return nil if initialization parameters are invalid (for example, someone passing in a negative rating value). Failable initializers always start with 'init?' or 'init!' to indicate that they can return optional or implicitly unwrapped optional values. Recall, optionals can either contain a valid value or nil. After writing code for the Model, I did some unit testing with XCode's unit testing framework (XCTest).
+
+**Thoughts** I am learning a lot and I am excited to attain a level of competency where I can start developing something real and impactful. That will require me to remain focus and dedicated, which has honestly been a major problem for me.
+
+**Link(s) to work**
