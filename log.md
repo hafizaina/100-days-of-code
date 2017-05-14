@@ -79,3 +79,11 @@ Use a weak reference when the other instance has a shorter lifetime - that is, w
 **Thoughts** I am learning a lot and I am excited to attain a level of competency where I can start developing something real and impactful. That will require me to remain focus and dedicated, which has honestly been a major problem for me.
 
 **Link(s) to work**
+
+### Day 10: May 14, 2017 - Working with Table Views
+
+**Today's Progress**: Today I implemented a table view for iOS in Swift. There was quite a bit of work that went into the process. I started by dragging a Table View Controller object from the Object Library to my Storyboard in Interface Builder. This created a new scene with a UITableView object as its main content layout. The individual rows in a table view are managed by table view cells (UITableViewCell), which are responsible for drawing their contents. For this application, we needed to design a custom table view cell. This required us to create a subclass of UITableViewCell within our project. After configuring the cell (giving it an identifier in the Attribute inspector and providing a class in the Identitiy inspector), I was able to design the custom cell interface directly in the Storyboard. I then linked the UI elements to code by control dragging the elements from the story board to my custom UITableViewCell class that I created. Next, I created a custom view controller subclass that's connected to the meal list scene. This view controller manages the view that displays the list of meals, and has a reference to the data model behind what’s shown in the user interface. After implementing this custom view controller class, I had to link the view controller to the scene in the Storyboard view the class property within the identity inspector.
+
+**Thoughts** I am learning a lot and I am excited to attain a level of competency where I can start developing something real and impactful. That will require me to remain focus and dedicated, which has honestly been a major problem for me.
+
+**Link(s) to work**
